@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Amigos de la Frontera</title>
+        <style>
+            .titulo-pr {
+    font-family: 'Truculenta', sans-serif;
+    font-size: 50px;
+    font-weight: 850;
+    color: white; 
+    background-color: rgb(0, 140, 255); 
+    width: 100%;
+    text-align: center; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    display: flex;
+    align-items: center;
+    margin: 0; 
+    padding: 0; 
+}
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px; 
+}
+
+nav {
+    background-color: transparent;
+    padding: 12px;
+    text-align: center;
+    font-size: 50%;
+    }
+    nav a:hover {
+    background-color:transparent; 
+
+    border-radius: 20px;
+
+    }
+    
+    nav a{
+    background-color:  rgb(189, 225, 255);
+    font-style: 'Truculenta', sans-serif;
+    color: rgb(255, 255, 255);
+    padding: 75px 150px;
+
+    }
+    * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se acomoden en varias líneas */
+    justify-content: center; /* Centra el contenido */
+    align-items: center;
+    width: 50%;
+}
+
+html {
+    font-size: 2vw; /* El texto se ajustará automáticamente */
+}
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Acomoda los elementos en columna */
+        text-align: center;
+    }
+    .box {
+        width: 100%; /* Se adapta al ancho */
+    }
+}
+.redes-sociales {
+    display: flex;
+    flex-direction: column; /* Los pone en columna */
+    align-items: center; /* Centra los enlaces */
+    gap: 20px; /* Espacio entre cada enlace */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+.redes-sociales a {
+    text-decoration: none; /* Quita el subrayado */
+    color: blue; /* Color del enlace */
+    font-size: 25px; /* Tamaño del texto */
+    font-family:'Truculenta', sans-serif;
+    font-weight: bold; /* Negrita */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background 0.3s ease; /* Transición suave */
+}
+
+.redes-sociales a:hover {
+    background: lightblue; /* Cambio de color al pasar el mouse */
+}
+body {
+    background-image: url('https://scontent.faep6-1.fna.fbcdn.net/v/t39.30808-6/453745224_18329379859125712_4491151395838878688_n.jpg?stp=dst-jpg_tt6&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeE7cNFWkvVA6cpGg0jUxxNlocgh9i222QGhyCH2LbbZAajrRSLlUsKOeLK4urGmiDZjz7Qsh1xZMj_hZCvZ1Lb3&_nc_ohc=qzE8QKnMc3wQ7kNvgH6gYv1&_nc_oc=AdmI7SK79Aaal7wiC8oT_Hom-qQ5BoxI64bFv2lZRt51WO_P0KeB51-ckwMYqRe3bs4&_nc_zt=23&_nc_ht=scontent.faep6-1.fna&_nc_gid=5WOzev6z34VaqRhaIBTuDQ&oh=00_AYGuh80NPsGegu_jG2IaXO89d39CS9zOoTC2_enr96zOXg&oe=67EE2BE4'); /* Cambia por la URL de tu imagen */
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100vh; /* Ajusta la altura al 100% de la pantalla */
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 0;
+}
+
+        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=Vh4ONPlMoG-Oqs4ENar4hPUal-OiA8kDwtPWTMdTTslQSFrCh2aPc52KfQJdzOOXuDipGPNsRfykfGq82qxj2_jHcGD4-jAcboGfGnSUcuV0nLZJOpSEGNEGO6-ML9zW_XKBrjHdV6DFMWD3bqUVeYMBuHKQsnE-rzyAe7TG6x1jLPPxkt4iJL8d-ATF0-dBpOat7RAIn8n3VMQsoY6JB9zaiPkv3VkCZEcCHLDoPQnQSmp0ieHvo975h59yLykFkgDmCZppTjfbYYODEcgUllmprEAjyoTpRJpcPFqK95oufhKY-NV1B65Rp0LEs3Wgmu-5Oxh-DRQCRSJ5a9CcboBqHLnX8viRNgooY499mFttnWDIp0P4LkJVRjXWuIV5pwZbR_M-1fobcZLA5aVHF_jHJh-hRled9zK01tnjtXvomMpvzyBQ4rK8hv_smhAYPFG1POpHxXJLYiC4gx9JvQe48rj3b6KvsOi_61pJRiTJwr4TsvqtVUa46v9Rjo7RcPT1mUITCGRjn0sJUaDjG4MW4iI3Iat8w7-5XLUIZMUzf07pTf4JvZdk05jKjIwY0Yi9LWUPrY_CCccbr5_LLdnTzYHp7JyBFefIG54xAx7VzowOATZnQv_afodsKqd3Ir1tqHFjr6740BUOx3xJEjhsESTRRg10f7ToqESmEVG_T9Z7uny1-KMCtrig8NbNtWVxAU7MXqkW0z9BvOw2VzM4ztTNRvEa_OVwZpTsSYckpEH-CG4aGrE1B77J-XyinDYXQSPiTpo6He7h5_-AGa-bUsy32_X9pDZ5fBQAh8mrOp7j3w4U8Qz9cxcoLq9s5eR-LuTkqypJqmRKhzFfy-Jfb2Qws6WEsjoz8hn20tRXIlju-lZgwdogRsJHJ6i9NWOzCRtSS-SfsNcneqt2t_AunyHHjMs_qX68efD5lWWKKE9-rnV-AP-ri-BFKJivS3a3FUJb_Px-rS3bdWbLXUehWl2QIesH1e129MKpjc6En-qYhiJAPds5aBYr9bnJ9qB2W1B73VV9t07yl3S-OR84v93KAhpYc3S2LNFyLCRW8Vqb_BNtakdBLsnF4ETcblyugQUzs0LSD7PgYR3jihIQB5pvfCyJEQU89XcIqE-1d4MVgPSarhGiew_7etEZZ05MImYxDoec0ilPLQJH_LHRBSeBt33Y6aHH9JuCklBoHmaN6lla_YAZaTTTb0X4TO5rU56E2FPBel4SEwsP2QC1sVe3M3DIr033x0o5usW2PUrzJKt5O7kfjlMd6LzydcM0R-07VEbInDSEdC5mtth_nEx0QMf6WS_ePu9Y5FH4V96W_I-XucO6rTGNSWWEvSIRtnIEVYrVPjwM6B3uybG--UIHwupYB9j68R1_Z_AxsRfM-iqbtPV3UEDDBlSGRcBM-qrWMVTMhiEf-l_sWK7VdRZr42tjNmaPZJBjstqOVijRyU9zUwvj0KtBdIRZ" charset="UTF-8"></script></head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <body>
+        <h1 class="titulo-pr">
+            <img src="https://scontent.fepa5-1.fna.fbcdn.net/v/t39.30808-6/308099893_459518742878120_4555363385432994623_n.png?_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=FroWCbWWnmgQ7kNvgHXHeFe&_nc_oc=Adk8WnD5an72WYw7ala_xWSvA1GOfFenIk1PqZGfKHUH6LR8Db6uTInVkAb0zmqihs92hqQKLUv_OvdiaDxRrRhm&_nc_zt=23&_nc_ht=scontent.fepa5-1.fna&_nc_gid=qLAGZcDbNF8Eor4o8lfr6Q&oh=00_AYHp_jAwq8WM91T6wyGpM-uA3npAZaf-o20EYmE9KlQvjw&oe=67ECDAE0" alt="Logo de AdelaF" class="logo">
+            AdelaF
+        </h1><br><br><br><br> <br><br><br><br><br><br>       
+        <nav  class="redes-sociales">
+            <a href="https://www.vatican.va/content/francesco/es.html">Sumate a pintar!</a>
+            <a href="https://www.instagram.com/adelaf.pjvm?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Seguinos en Instagram!</a>
+            <a href="https://www.tiktok.com/@amigosdelafrontera?is_from_webapp=1&sender_device=pc">Seguinos en Tiktok!</a>
+            </nav>
+    
+    </body>  
+    </html>
